@@ -130,7 +130,7 @@
 
     <Button
         android:id="@+id/buttonPlus"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="85dp"
         android:background="@drawable/symbol_button_large_pt"
         android:text="@string/_Plus"
@@ -142,7 +142,7 @@
 
     <Button
         android:id="@+id/buttonMinus"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="85dp"
         android:background="@drawable/symbol_button_large_pt"
         android:text="@string/_Minus"
@@ -154,7 +154,7 @@
 
     <Button
         android:id="@+id/buttonMultiply"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="85dp"
         android:background="@drawable/symbol_button_large_pt"
         android:text="@string/_Multiply"
@@ -166,13 +166,14 @@
 
     <Button
         android:id="@+id/buttonDivision"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="85dp"
         android:background="@drawable/symbol_button_large_pt"
         android:text="@string/_Division"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMultiply"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonClosePar" />
 
     <Button
@@ -195,11 +196,12 @@
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDivision"
         app:layout_constraintStart_toEndOf="@+id/buttonOpenPar" />
 
     <Button
         android:id="@+id/buttonEqual"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="85dp"
         android:background="@drawable/equal_button_pt"
         android:text="@string/_Equal"
@@ -228,6 +230,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
         android:text="@string/_Example"
         android:textAlignment="viewEnd"
         android:textColor="@android:color/white"
@@ -236,6 +239,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" tools:targetApi="jelly_bean"/>
 
 </android.support.constraint.ConstraintLayout>
